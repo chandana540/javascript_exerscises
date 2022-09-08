@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Reverse of number</title>
+    </head>
+    <script>
+        var a1=prompt("enter number to be reversed")
+        var a=parseInt(a1);
+        var a2=a.toString().length;   //converting to string and getting no.of digitsi.eee length
+        //console.log(a2)
+        
+        function reverse()
+        { 
+            
+            for(var i=1;i<=a2;i++)         //looping till length of number 
+            {
+
+            var b,c;
+          b =(a%10);                    //finding remainder [getting last digit]
+         c=a/10;                         // finding quotient and store in c
+         document.writeln(Math.floor(b));
+     
+         a=c;                            // assigning quotient to a and continue with loop
+        }
+    }
+        reverse();
+    </script>
+    <body></body>
+</html>

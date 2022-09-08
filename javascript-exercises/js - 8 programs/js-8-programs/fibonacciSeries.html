@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>fibonacci numbers</title>
+    </head>
+     <script>
+         var a1=prompt("enter  upto how many values to display fibonnaci sequence");
+    
+        function fibonaci()
+        {
+        
+         var a2= parseInt(a1);
+            var a=0, b=1,c;    
+           // console.log(a);               // if we want the starting values also  i.ee ...0 &1
+           // console.log(b)
+           document.writeln("fibonnaci series is:")
+            for(var i=0;i<a1;i++)  
+            {
+               
+                var c=a+b;
+            
+                    
+                document.writeln(c  + "  ")
+                
+                a=b;
+                b=c;
+         
+            
+            }
+            
+            
+        }
+        fibonaci();
+       
+
+
+    </script>
+    <body>
+
+    </body>
+</html>

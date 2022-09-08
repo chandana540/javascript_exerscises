@@ -1,0 +1,51 @@
+
+<html>
+    <head>
+        <title>Reverse of number</title>
+    </head>
+    <script>
+        var a1=prompt("enter number to find whether amstrong or not");
+        var a= parseInt(a1);
+        var a3=a;
+
+        var sum=0;
+        function amstrong()
+         {
+            var a2=a.toString().length;  
+      
+            for(var i=1;i<=a2;i++)        
+            {
+
+            var b,c;
+              // var  a3= parseInt(a1);
+          b =(a%10);                  
+         c=a/10;      
+
+         var b1= Math.floor(b)  ;            
+       //  document.writeln(b1);
+          a=c; 
+          
+          var cube= b1*b1*b1;
+       // console.log(cube);
+        
+        sum=sum+cube;
+     //   console.log(sum)   
+        
+            }
+
+            //console.log(sum)
+           // console.log(a3);
+        if(sum==a3)
+        {      
+             document.writeln("amstrong number")
+        } 
+        else{
+            document.writeln("not an amstrong number ")
+        }                     
+        
+    
+        
+        }
+        amstrong();
+        </script>
+        </html>

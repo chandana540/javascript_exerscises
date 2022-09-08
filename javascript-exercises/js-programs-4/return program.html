@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>find output program</title>
+        <script>
+            var X ={Foo : 1}; 
+        
+ var Output = function()
+ {
+     
+ console.log(delete X.Foo);             //here removing value :1
+ console.log(X)                           //so, it will return empty object
+ return console.log(X.Foo);                  // no value in x so undefined
+
+ 
+}
+console.log(Output())
+        </script>
+    </head>
+</html>

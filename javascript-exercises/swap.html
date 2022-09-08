@@ -1,0 +1,27 @@
+<html>
+    <head>
+       <title>first letter is small remaining caps</title>
+<script>
+var str="Hello World";
+
+
+function FirstLetterIssmall() {
+   var str="Hello World";                           // given string is Hello World
+   var str1=str.toUpperCase();                         //HELLO WORLD
+ var str2=str1.charAt(0).toLowerCase() +str1.slice(1,6);       //extracting first letter of hello and slicing the remaining part in hello
+ //console.log(str2)
+var str3=str1.charAt(6).toLowerCase()+str1.slice(7,11)        ////extracting first letter of world and slicing the remaining part in world
+//console.log(str3)
+var str4= str2+str3;                                             //combining both parts hello and world
+document.writeln( "The modified string is : " + str4)
+   
+
+
+  
+ }
+ 
+ console.log(FirstLetterIssmall()); 
+
+</script>
+</head>
+</html>

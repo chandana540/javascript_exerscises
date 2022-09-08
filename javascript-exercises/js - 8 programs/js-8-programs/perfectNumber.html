@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Perfect Number</title>
+        <script>
+            var a1=prompt("enter number to check if it is perfect number ")
+             var a=parseInt(a1);
+
+             function perfectNumber()
+             {
+                 sum=0;
+                 for(var i=1;i<a;i++)
+                 {
+                   if(a%i ==0)
+                   {
+                       sum=sum+i;
+                   }
+                 }
+                 if(sum == a)
+                 {
+                     document.writeln("it is a perfect number")
+                 }
+                 else{
+                     document.writeln("not a perfect number")
+                 }
+             }
+             perfectNumber();
+        </script>
+    </head>
+</html>
